@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="https://media.formula1.com/etc/designs/fom-website/favicon-32x32.png">
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script type="text/javascript" src="standings.json"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <body onload="setScores();"></body>
+</head>
+<body>
+    <script src="/scores.js">
+        
+        
+    </script>
+    <div class="topnav">
+        <span onclick="toggleDark()" id="darkToggle" class="material-icons">dark_mode</span>
+        <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+            <span class="material-symbols-rounded">menu</span>
+        <div id="myLinks">
+            <a id="link1" class="active" href="#home">Home</a>
+            <a id="link2" onclick="navActive()" href="#news">Work</a>
+            <a id="link3" href="#contact">Contact</a>
+            <a id="link4" href="#about">About</a>
+        </div>
+    <button onclick="test()"></button>
+    </div>
+      <br>
+      <br>
+      <br>
+    <div id="driverList">
+    <div class="driver">
+    <img src="/images/RBverstapen.webp" style="width:250;height:250px"/> 
+    <label id="RBve">93</label>
+    <img src="/images/RBperez.webp" style="width:250;height:250px"/><label id="RBpe">93</label>
+    </div>
+    <div class="driver">
+        <img src="/images/FRleclerc.webp" style="width:250;height:250px"/><label id="FRle">93</label>
+        <img src="/images/FRsainz.webp" style="width:250;height:250px"/><label id="FRsa">93</label>
+    </div>
+    <div class="driver">
+        <img src="/images/AMalonso.webp" style="width:250;height:250px"/><label id="AMal">93</label>
+        <img src="/images/AMstroll.webp" style="width:250;height:250px"/><label id="AMst">93</label>
+    </div>
+    <div class="driver">
+        <img src="/images/MDhamilton.webp" style="width:250;height:250px"/><label id="MDha">93</label>
+        <img src="/images/MDrussel.webp" style="width:250;height:250px"/><label id="MDru">93</label>
+    </div>
+    <div class="driver">
+        <img src="/images/MLpiastri.webp" style="width:250;height:250px"/><label id="MLpi">93</label>
+        <img src="/images/MLnorris.webp" style="width:250;height:250px"/><label id="MLno">93</label>
+    </div>
+    <div class="driver">
+        <img src="/images/APgasly.webp" style="width:250;height:250px"/><label id="APga">93</label>
+        <img src="/images/APocon.webp" style="width:250;height:250px"/><label id="APoc">93</label>
+    </div>
+    <div class="driver">
+        <img src="/images/ARbottas.webp" style="width:250;height:250px"/><label id="ARbo">93</label>
+        <img src="/images/ARguanyu.webp" style="width:250;height:250px"/><label id="ARgu">93</label>
+    </div>
+    <div class="driver">
+        <img src="/images/WLalbon.webp" style="width:250;height:250px"/><label id="WLal">93</label>
+        <img src="/images/WLsargeant.webp" style="width:250;height:250px"/><label id="WLsa">93</label>
+    </div>
+    <div class="driver">
+        <img src="/images/HShulkenberg.webp" style="width:250;height:250px"/><label id="HShu">93</label>
+        <img src="/images/HSmagnussen.webp" style="width:250;height:250px"/><label id="HSmag">93</label>
+    </div>
+    <div class="driver">
+        <img src="/images/ATdevries.webp" style="width:250;height:250px"/><label id="ATde">93</label>
+        <img src="/images/ATtsunoda.webp" style="width:250;height:250px"/><label id="ATts">93</label>
+    </div>
+    </div>
+    
+    <script>
+        function hamburger() {
+        var y = document.getElementById("myLinks");
+        if (y.style.display === "block") {
+            y.style.display = "none";
+        } else {
+            y.style.display = "block";
+        }
+        } 
+    </script>
+   <script>
+    // function navActive(){
+    //     var element =document.body;
+    //     element.classList.toggle()
+    // }
+     function toggleDark() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        var x = document.getElementById("darkToggle");
+        if (x.innerHTML === "dark_mode") {
+            x.innerHTML = "light_mode";
+        } else {
+            x.innerHTML = "dark_mode";
+        }
+        }
+    </script>
+</body>
+</html>

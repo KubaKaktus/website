@@ -1,0 +1,55 @@
+* {
+    font-family: 'Inconsolata', monospace;
+}
+.topnav #myLinks {
+    display: none;
+}
+
+.driver{
+    text-align: center;
+    
+}
+
+.topnav {
+    background-color: #181818;
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+
+.topnav a {
+    float: left;
+    color: #b3b3b3af;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:active {
+    color: #ffffff;
+}
+.topnav a:hover{
+    background-color: #ffffff18;
+}
+#darkToggle{
+    float: right;
+    padding: 13px;
+}
+.material-icons {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
